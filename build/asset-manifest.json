@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e59cf60c.css",
+    "main.js": "./static/js/main.60cdab8a.js",
+    "static/media/poppins.ttf": "./static/media/poppins.673ed42382ab264e0bf5.ttf",
+    "static/media/slack.png": "./static/media/slack.08a9dcfe3abb4decbf15.png",
+    "index.html": "./index.html",
+    "main.e59cf60c.css.map": "./static/css/main.e59cf60c.css.map",
+    "main.60cdab8a.js.map": "./static/js/main.60cdab8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e59cf60c.css",
+    "static/js/main.60cdab8a.js"
+  ]
+}
