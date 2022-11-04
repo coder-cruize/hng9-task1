@@ -1,11 +1,17 @@
 @font-face {
+  font-family: poppins_light;
+  src: url(./resources/poppins-light.ttf);
+}
+@font-face {
   font-family: poppins;
   src: url(./resources/poppins.ttf);
 }
 *{
   padding: 0;
   margin: 0;
-  font-family: poppins;
+  font-family: poppins_light;
+  outline: none;
+  color: #475467;
 }
 .App{
   height: 100vh;
@@ -76,12 +82,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  header{}
-  form{
-    padding-top: 48px;
-    input{
-      
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 45%;
+    min-width: 500px;
+    header{
+      h2{
+        font-family: poppins;
+      }
+    }
+    form{
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 30px;
+      .field{
+        display: inherit;
+        flex-wrap: inherit;
+        width: 100%;
+        flex-grow: 1;
+        input, textarea{
+          width: 100%;
+          padding: 10px 20px;
+          border: 1px solid #D0D5DD;
+          font-weight: 100;
+          font-size: 16px;
+          border-radius:  10px;
+          resize: none;
+        }
+      }
+      ._small{
+        width: 100px !important;
+      }
+      .check{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        input{
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          background-color: red;
+        }
+      }
+      #btn__submit{
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        background-color: #1570EF;
+        width: 100%;
+        color: #fff;
+        margin-top: 15px;
+      }
     }
   }
 }
