@@ -70,14 +70,27 @@
   max-width: 250px;
 }
 
+.Contact {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Contact form {
+  padding-top: 48px;
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  footer {
+  .App footer {
     flex-direction: column;
     align-items: flex-start !important;
     padding-left: 50px;
   }
-  footer * {
+  .App footer * {
     margin-bottom: 20px;
   }
 }
