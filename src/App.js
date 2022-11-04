@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import icon_i4g from "./resources/i4g.png";
+import icon_zuri from "./resources/zuri.png";
 
 function App() {
   const links = [
@@ -39,6 +41,11 @@ function App() {
         <Route path="/" element={<Home links={links} />} />
         <Route path="/contact" element={<Contact />} />
       </Switch>
+      <footer>
+        <img src={icon_zuri} alt="" />
+        <span>HNG Internship 9 Frontend Task</span>
+        <img src={icon_i4g} alt="" />
+      </footer>
     </Router>
   );
 }
