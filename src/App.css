@@ -1,11 +1,17 @@
 @font-face {
+  font-family: poppins_light;
+  src: url(./resources/poppins-light.ttf);
+}
+@font-face {
   font-family: poppins;
   src: url(./resources/poppins.ttf);
 }
 * {
   padding: 0;
   margin: 0;
-  font-family: poppins;
+  font-family: poppins_light;
+  outline: none;
+  color: #475467;
 }
 
 .App {
@@ -78,11 +84,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Contact .center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
+  width: 45%;
+  min-width: 500px;
 }
-.Contact form {
-  padding-top: 48px;
+.Contact .center header h2 {
+  font-family: poppins;
 }
+.Contact .center form {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+}
+.Contact .center form .field {
+  display: inherit;
+  flex-wrap: inherit;
+  width: 100%;
+  flex-grow: 1;
+}
+.Contact .center form .field input, .Contact .center form .field textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #D0D5DD;
+  font-weight: 100;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+}
+.Contact .center form ._small {
+  width: 100px !important;
+}
+.Contact .center form .check {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Contact .center form .check input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: red;
+}
+.Contact .center form #btn__submit {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #1570EF;
+  width: 100%;
+  color: #fff;
+  margin-top: 15px;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .App footer {
