@@ -1,5 +1,3 @@
-import icon_i4g from "../resources/i4g.png";
-import icon_zuri from "../resources/zuri.png";
 import icon_twitter from "../resources/twitter.png";
 import icon_slack from "../resources/slack.png";
 import icon_github from "../resources/github.png";
@@ -36,13 +34,7 @@ function Home({ links }) {
           <img src={icon_github} alt="github" />
         </a>
       </div>
-      <footer>
-        <img src={icon_zuri} alt="" />
-        <span>HNG Internship 9 Frontend Task</span>
-        <img src={icon_i4g} alt="" />
-      </footer>
     </div>
   );
 }
-
 export default Home

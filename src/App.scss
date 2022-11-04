@@ -13,8 +13,16 @@
   outline: none;
   color: #475467;
 }
-.App{
+#root{
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.App{
+  height: 100%;
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -22,6 +30,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
   header{
     display: flex;
     flex-direction: column;
@@ -59,23 +68,9 @@
       width: 30px
     }
   }
-  footer{
-    width: 80%;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 10px;
-    border-top: 1px solid #ccc;
-    color: #999;
-    img{
-      display: block;
-      max-width:250px;
-    }
-  }
 }
 .Contact{
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -140,16 +135,29 @@
     }
   }
 }
+footer{
+  width: 80%;
+  padding-top: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+  color: #999;
+  img{
+    display: block;
+    max-width:250px;
+  }
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .App{
-    footer{
-      flex-direction: column;
-      align-items: flex-start !important;
-      padding-left: 50px;
-      *{
-        margin-bottom: 20px;
-      }
+  footer{
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding-left: 50px;
+    *{
+      margin-bottom: 20px;
     }
   }
 }
