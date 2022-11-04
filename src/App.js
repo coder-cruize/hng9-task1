@@ -27,6 +27,11 @@ function App() {
       subtext:
         "The HNG Design Rules Book gives you the tips & guidelines you need to create truly professional designs, by addressing errors that could you get you disqualified.",
     },
+    {
+      title: "Contact",
+      url: "/contact",
+      id: "contact",
+    },
   ];
   return (
     <Router>
