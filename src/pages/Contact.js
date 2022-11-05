@@ -28,7 +28,7 @@ function Contact() {
             <input type="checkbox" />
             <span>You agree to providing your data to {name} who may contact you.</span>
           </div>
-          <input id="btn__submit" type="button" value="Send message"/>
+          <button type="button" id="btn__submit">Send message</button>
         </form>
       </div>
     </div>
